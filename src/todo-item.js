@@ -5,7 +5,12 @@ const TodoItem = React.createClass({
     return (
       <li>
         <div className="view">
-          <input type="checkbox" className="toggle"/>
+          <input
+            checked={this.props.todo.completed}
+            onChange={this.props.handleToggle}
+            type="checkbox"
+            className="toggle"
+            />
           <label htmlFor="">{this.props.todo.title}</label>
           <button className="destroy"></button>
         </div>
