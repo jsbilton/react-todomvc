@@ -1,4 +1,5 @@
 # React Todo Exercise
+http://jaredreacttodo.surge.sh/
 
 A simple react todo application
 
@@ -61,3 +62,50 @@ component
 ## Step 9 - remove filter
 
 ## Step 10 - clear completed
+
+
+Process:
+Setup: 
+Initial State
+Give Array some values
+Require Map
+Create unordered list
+
+Next Step:
+value
+form
+add handle submit and handle change
+need to be able to control component value on change
+select value on change
+input would be checked if checkbox, if input it is value on change
+https://facebook.github.io/react/docs/forms.html#controlled-components
+
+Edit todo item:
+Todo Item needs its own state
+editText: this.props.todo.title
+Todo Item needs to handle the events: edit, change, submit
+
+View label should listen for double click event 
+
+Edit Input should be controlled 
+value = this.state.editText
+onChange = this.state.handleChange
+onBlur = this.state.handleSubmit
+
+Implement edit text, handle change, handle submit, on the Todo Item Component
+
+Render method should change the list item class name to editing if this.props.editing is not null 
+
+App should pass the following props to Todo Item: editing, onEdit, onSave
+
+Implement edit Todo and save Todo on app component 
+
+Next step is Remove
+
+Next step is show active item count 
+
+Then we want to filter through the active items/completed items as well as all items 
+
+Want to clear the completed tasks
+
+
